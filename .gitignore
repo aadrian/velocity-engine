@@ -1,0 +1,15 @@
+bin
+.idea
+*.ipr
+*.iml
+Thumbs.db
+target
+.project
+velocity.log*
+*.ser
+.classpath
+.settings
+.fbprefs
+.fbwarnings
+.codewrestler*
+.findbugs*

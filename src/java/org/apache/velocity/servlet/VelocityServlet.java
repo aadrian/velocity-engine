@@ -170,11 +170,11 @@ public abstract class VelocityServlet extends HttpServlet
 
     /**
      *  Initializes the Velocity runtime, first calling
-     *  loadConfiguration(ServletConvig) to get a
+     *  loadConfiguration(ServletConfig) to get a
      *  java.util.Properties of configuration information
      *  and then calling Velocity.init().  Override this
      *  to do anything to the environment before the
-     *  initialization of the singelton takes place, or to
+     *  initialization of the singleton takes place, or to
      *  initialize the singleton in other ways.
      * @param config
      * @throws ServletException
@@ -404,7 +404,7 @@ public abstract class VelocityServlet extends HttpServlet
      *  cleanup or other end of process cycle tasks.
      *
      *  @param request servlet request from client
-     *  @param response servlet reponse
+     *  @param response servlet response
      *  @param context  context created by the createContext() method
      */
     protected void requestCleanup( HttpServletRequest request, HttpServletResponse response, Context context )
@@ -417,7 +417,7 @@ public abstract class VelocityServlet extends HttpServlet
      *
      *  @param template template object returned by the handleRequest() method
      *  @param context  context created by the createContext() method
-     *  @param response servlet reponse (use this to get the output stream or Writer
+     *  @param response servlet response (use this to get the output stream or Writer
      * @throws ResourceNotFoundException
      * @throws ParseErrorException
      * @throws MethodInvocationException
@@ -487,7 +487,7 @@ public abstract class VelocityServlet extends HttpServlet
      * appropriate character encoding.
      *
      * @param request The servlet request from the client.
-     * @param response The servlet reponse to the client.
+     * @param response The servlet response to the client.
      */
     protected void setContentType(HttpServletRequest request,
                                   HttpServletResponse response)
@@ -534,11 +534,11 @@ public abstract class VelocityServlet extends HttpServlet
      *  <br><br>
      *  Default implementation will create a VelocityContext object,
      *   put the HttpServletRequest and HttpServletResponse
-     *  into the context accessable via the keys VelocityServlet.REQUEST and
+     *  into the context accessible via the keys VelocityServlet.REQUEST and
      *  VelocityServlet.RESPONSE, respectively.
      *
      *  @param request servlet request from client
-     *  @param response servlet reponse to client
+     *  @param response servlet response to client
      *
      *  @return context
      */
@@ -613,7 +613,7 @@ public abstract class VelocityServlet extends HttpServlet
      * for the error handler to catch.
      *
      *  @param request servlet request from client
-     *  @param response servlet reponse
+     *  @param response servlet response
      *  @param ctx The context to add your data to.
      *  @return    The template to merge with your context or null, indicating
      *    that you handled the processing.

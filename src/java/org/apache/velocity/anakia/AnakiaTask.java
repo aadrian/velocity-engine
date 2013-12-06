@@ -336,7 +336,7 @@ public class AnakiaTask extends MatchingTask
                     (inFile.lastModified() > outFile.lastModified() ||
                     styleSheetLastModified > outFile.lastModified() ||
                     projectFileLastModified > outFile.lastModified() ||
-                    userContextsModifed(outFile.lastModified())))
+                    userContextsModified(outFile.lastModified())))
             {
                 ensureDirectoryFor( outFile );
 
@@ -525,7 +525,7 @@ public class AnakiaTask extends MatchingTask
     /**
      * Check to see if user context is modified.
      */
-    private boolean userContextsModifed(long lastModified)
+    private boolean userContextsModified(long lastModified)
     {
         for (Iterator iter = contexts.iterator(); iter.hasNext();)
         {

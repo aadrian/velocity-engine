@@ -59,7 +59,7 @@ public interface RuntimeConstants
     String RUNTIME_REFERENCES_STRICT = "runtime.references.strict";
     
     /**
-     * Indicates we are going to use modifed escape behavior in strict mode
+     * Indicates we are going to use modified escape behavior in strict mode
      */
     String RUNTIME_REFERENCES_STRICT_ESCAPE = "runtime.references.strict.escape";
        

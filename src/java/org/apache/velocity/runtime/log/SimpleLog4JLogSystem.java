@@ -117,7 +117,7 @@ public class SimpleLog4JLogSystem implements LogSystem
         logger.setAdditivity(false);
 
         /*
-         * Priority is set for DEBUG becouse this implementation checks
+         * Priority is set for DEBUG because this implementation checks
          * log level.
          */
         logger.setLevel(Level.DEBUG);

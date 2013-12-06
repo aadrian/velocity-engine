@@ -475,7 +475,7 @@ public class VelocimacroFactory
      *  to be added
      *
      *  @param name Name of VM to add
-     *  @param sourceTemplate Source template that contains the defintion of the VM
+     *  @param sourceTemplate Source template that contains the definition of the VM
      *  @return true if it is allowed to be added, false otherwise
      */
     private synchronized boolean canAddVelocimacro(String name, String sourceTemplate)
@@ -511,7 +511,7 @@ public class VelocimacroFactory
             /*
              * otherwise, if we have it already in global namespace, and they can't replace
              * since local templates are not allowed, the global namespace is implied.
-             *  remember, we don't know anything about namespace managment here, so lets
+             *  remember, we don't know anything about namespace management here, so lets
              *  note do anything fancy like trying to give it the global namespace here
              *
              *  so if we have it, and we aren't allowed to replace, bail

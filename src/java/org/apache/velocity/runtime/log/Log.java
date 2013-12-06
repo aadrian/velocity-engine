@@ -238,7 +238,7 @@ public class Log
 
     /**
      * Creates a string that formats the template filename with line number
-     * and column of the given Node. We use this routine to provide a cosistent format for displaying 
+     * and column of the given Node. We use this routine to provide a consistent format for displaying
      * file errors.
      */
     public static final String formatFileString(Node node)
@@ -248,7 +248,7 @@ public class Log
     
     /**
      * Simply creates a string that formats the template filename with line number
-     * and column. We use this routine to provide a cosistent format for displaying 
+     * and column. We use this routine to provide a consistent format for displaying
      * file errors.
      */
     public static final String formatFileString(Info info)
@@ -258,7 +258,7 @@ public class Log
     
     /**
      * Simply creates a string that formats the template filename with line number
-     * and column. We use this routine to provide a cosistent format for displaying 
+     * and column. We use this routine to provide a consistent format for displaying
      * file errors.
      * @param template File name of template, can be null
      * @param linenum Line number within the file

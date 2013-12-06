@@ -200,7 +200,6 @@ public class Velocity implements RuntimeConstants
      * @throws ParseErrorException The template could not be parsed.
      * @throws MethodInvocationException A method on a context object could not be invoked.
      * @throws ResourceNotFoundException A referenced resource could not be loaded.
-     * @throws IOException While loading a reference, an I/O problem occured.
      */
     public static boolean evaluate( Context context, Writer writer,
                                     String logTag, InputStream instream )
@@ -379,7 +378,7 @@ public class Velocity implements RuntimeConstants
     }
 
     /**
-     * <p>Determines whether a resource is accessable via the
+     * <p>Determines whether a resource is accessible via the
      * currently configured resource loaders.  {@link
      * org.apache.velocity.runtime.resource.Resource} is the generic
      * description of templates, static content, etc.</p>
@@ -452,7 +451,7 @@ public class Velocity implements RuntimeConstants
     /**
      *  <p>
      *  Set the an ApplicationAttribue, which is an Object
-     *  set by the application which is accessable from
+     *  set by the application which is accessible from
      *  any component of the system that gets a RuntimeServices.
      *  This allows communication between the application
      *  environment and custom pluggable components of the
@@ -460,7 +459,7 @@ public class Velocity implements RuntimeConstants
      *  </p>
      *
      *  <p>
-     *  Note that there is no enfocement or rules for the key
+     *  Note that there is no enforcement or rules for the key
      *  used - it is up to the application developer.  However, to
      *  help make the intermixing of components possible, using
      *  the target Class name (e.g.  com.foo.bar ) as the key

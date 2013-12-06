@@ -401,7 +401,7 @@ provided to make Velocity easier to integrate into your Java application.
    is a very appropriate model for use in a Servlet 2.2+ compliant web application
    as each web application can have its own instance of Velocity, allowing
    that web application's servlet to share resources like templates, a logger, etc.
-   The singleton is accessable via the <code>org.apache.velocity.app.Velocity</code>
+   The singleton is accessible via the <code>org.apache.velocity.app.Velocity</code>
    class, and and example of use:
 </p>
 <source><![CDATA[
@@ -512,7 +512,7 @@ that the context is a 'carrier' of data between the Java layer (or you the
 programmer) and the template layer ( or the designer ). You as the programmer
 will gather objects of various types, whatever your application calls for, and
 place them in the context.  To the designer, these objects, and their methods
-and properties, will become accessable via template elements called
+and properties, will become accessible via template elements called
 <a href="vtl-reference-guide.html"> references</a>. Generally, you will work
 with the designer to determine the data needs for the application. In a sense,
 this will become an 'API'  as you produce a data set for the designer to access
@@ -561,7 +561,7 @@ see the API documentation included in the distribution.
 As a programmer, you have great freedom in the objects that you put into the
 context.  But as with most freedoms, this one comes with a little bit of
 responsibility, so understand what Velocity supports, and any issues that may
-arise.  Velocity supports serveral types of collection types  suitable for use
+arise.  Velocity supports several types of collection types  suitable for use
 in the VTL <code>#foreach()</code> directive.
 </p>
 
@@ -718,7 +718,7 @@ be the string "I am in context2".
 <p>
 Note that this duplication, or 'covering', of a context item does not in
 any way harm or alter the covered object.  So in the example above, the
-string "I am in context1" is alive and well, still accessable via
+string "I am in context1" is alive and well, still accessible via
 context1.get("duplicate").  But in the example above, the value of the
 reference '$duplicate' in the template would be 'I am in context2',
 and the template has no access to the covered string 'I am in context1'.
@@ -739,7 +739,7 @@ data access and toolsets.
 As mentioned before, the Velocity context mechanism is also extendable,
 but beyond the current scope of this guide. If you are interested,
 please see the classes in the package <code>org.apache.velocity.context</code>
-to see how the provided contexts are put together.  Futher, there are a few
+to see how the provided contexts are put together.  Further, there are a few
 examples in the <code>examples/context_example</code> directory in the
 distribution which show alternate implementations, including [a goofy] one
 that uses a database as the backing storage.
@@ -779,7 +779,7 @@ those objects after the merge process is complete.
 ]]></source>
 
 <p>
-Dealing with these cases if very straighforward, as there are just a few
+Dealing with these cases if very straightforward, as there are just a few
 things to know:
 </p>
 
@@ -815,7 +815,7 @@ known usage pattern where you must be aware of this feature.
 </p>
 
 <p>
-The VelocityContext will accumulate intropection information about the
+The VelocityContext will accumulate introspection information about the
 syntax nodes in a template as it visits those nodes.  So, in the following
 situation:
 </p>
@@ -997,7 +997,7 @@ and a brief description of what they do:
      InputStream instream )</code><br/>
      These methods will render the input, in either the form of String or
      InputStream to an output Writer, using a Context that you provide.
-     This is a very convenienient method to use for token replacement of
+     This is a very convenient method to use for token replacement of
      strings, or if you keep 'templates' of VTL-containing content in a
      place like a database or other non-file storage, or simply generate such
      dynamically.
@@ -1078,7 +1078,7 @@ public class Example2
 <p>
 When we run this program, and have the template <code> testtemplate.vm</code>
 in the same directory as our program (because we used the default
-configuration properties, and the defaul place to load templates
+configuration properties, and the default place to load templates
 from is the current directory...), our output should be:
 </p>
 
@@ -1113,7 +1113,7 @@ the above example where <code>mergeTemplate()</code> is used,
 <code>mergeTemplate()</code> is doing the work of getting the template
 and merging it for you, using the lower-level calls in the Runtime class.
 In the second example, you are making your template dynamically via the
-String, so that is analgous to the 'choose template' part of the process,
+String, so that is analogue to the 'choose template' part of the process,
 and the <code>evaluate()</code> method does the merging for you using
 lower level calls.
 </p>
@@ -1156,7 +1156,7 @@ directive initialization.
 <li>
 <code>MethodInvocationException</code><br/>
 Thrown when a method of object in the context thrown an exception during
-render time.  This exception wraps the thrown exception and propogates it
+render time.  This exception wraps the thrown exception and propagates it
 to the application.  This allows you to handle problems in your own objects
 at runtime.
 </li>
@@ -1369,7 +1369,7 @@ When a user-supplied method throws an exception, the
 <code>MethodExceptionEventHandler</code> is invoked with the Class, method name
 and thrown Exception.  The handler can either return a valid Object to be used
 as the return value of the method call or throw the passed-in or new Exception,
-which will be wrapped and propogated to the user as a
+which will be wrapped and propagated to the user as a
 <code>MethodInvocationException</code>.  While <code>MethodExceptionEventHandler</code>'s can be 
 chained only the first handler is actually called -- all others are ignored.
 <pre>
@@ -1530,7 +1530,7 @@ for its configuration keys at startup, although it may not be what you want.
 
 <p>
 Any values specified before init() time will replace the  default values.
-Therefore, you only have toconfigure velocity with the values for the keys
+Therefore, you only have to configure velocity with the values for the keys
 that you need to change, and not worry about the rest.  Further, as we add more
 features and configuration capability, you don't have to change your
 configuration files to suit - the Velocity engine will always have default
@@ -1783,7 +1783,7 @@ life easy for development and debugging.  This should be set to true for
 production deployment.  When 'true', the <code>modificationCheckInterval</code>
 property applies.  This allows for the efficiency of caching, with the
 convenience of controlled reloads - useful in a hosted or ISP environment
-where templates can be modifed frequently and bouncing the application or
+where templates can be modified frequently and bouncing the application or
 servlet engine is not desired or permitted.
 </p>
 
@@ -1823,7 +1823,7 @@ file.resource.loader.modificationCheckInterval = 2
 <code>velocimacro.library = VM_global_library.vm </code><br/>
 <i>Multi-valued key.  Will accept CSV for value.</i>
 Filename(s) of Velocimacro library to be loaded when the Velocity
-Runtime engine starts.  These Velocimacros are accessable to all
+Runtime engine starts.  These Velocimacros are accessible to all
 templates.  The file is assumed to be relative to the root of the
 file loader resource path.
 </p>
@@ -1838,14 +1838,14 @@ those #macro() statements can replace global definitions.
 
 <p>
 <code>velocimacro.permissions.allow.inline.to.replace.global = false </code><br/>
-Controls if a Velocimacro defind 'inline' in a template can replace
+Controls if a Velocimacro defined 'inline' in a template can replace
 a Velocimacro defined in a library loaded at startup.
 </p>
 
 <p>
 <code>velocimacro.permissions.allow.inline.local.scope = false</code><br/>
 Controls 'private' templates namespaces for Velocimacros.  When true, a #macro()
-directive in a template  creates a Velocimacro that is accessable only from the
+directive in a template  creates a Velocimacro that is accessible only from the
 defining template.  This means that Velocimacros cannot be shared unless they
 are in the global or local library loaded at startup. (See above.)  It also means
 that templates cannot interfere with each other.  This property also allows a technique
@@ -2215,7 +2215,7 @@ public class MyClass implements LogChute
 
   /**
    *  This init() will be invoked once by the LogManager
-   *  to give you the current RuntimeServices intance
+   *  to give you the current RuntimeServices instance
    */
   public void init(RuntimeServices rsvc)
   {
@@ -2263,14 +2263,14 @@ public class MyClass implements LogChute
 One of the fundamental and important parts about Velocity is the resource
 management system and the resource loaders.  They are referred to as 'resources'
 here rather than 'templates' because the resource management system will also
-handle non-template reasources, specifically things that are loaded via the
+handle non-template resources, specifically things that are loaded via the
 #include() directive.
 </p>
 
 <p>
 The resource loader system if very flexible, allowing one or more resource
 loaders to be in operation at the same time.  This allows tremendous
-flexibility in configuration and resource managment, and futher allows you
+flexibility in configuration and resource management, and further allows you
 to write your own resource loaders for your special needs.
 </p>
 
@@ -2415,7 +2415,7 @@ to check for new templates.
 </p>
 
 <p>
-Those are the basics.  What follows are a few examples of different configuraitons.
+Those are the basics.  What follows are a few examples of different configurations.
 </p>
 
 <p>
@@ -2528,7 +2528,7 @@ and resource cache with custom implementations.
 A resource manager implementation must implement the
 <code>org.apache.velocity.runtime.resource.ResourceManager</code> interface.
 A description of the requirements of a resource manager is out of scope for
-this document.  Implementors are encouraged to review the default implementation.
+this document. Implementors are encouraged to review the default implementation.
 To configure Velocity to load the replacement implementation, use the
 configuration key:
 </p>
@@ -2547,7 +2547,7 @@ A resource cache implementation must implement the
 <code>org.apache.velocity.runtime.resource.ResourceCache</code> interface
 As with the resource manager, a description of the requirements of a
 resource manager is out of scope for
-this document.  Implementors are encouraged to review the default implementation.
+this document. Implementors are encouraged to review the default implementation.
 To configure Velocity to load the replacement implementation, use the
 configuration key:
 </p>
@@ -2573,7 +2573,7 @@ resource.manager.cache.size
 ]]></source>
 
 <p>
-This key is also defined as a contstant
+This key is also defined as a constant
 <code>RuntimeConstants.RESOURCE_MANAGER_CACHE_SIZE</code>
 </p>
 

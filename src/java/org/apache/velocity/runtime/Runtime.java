@@ -194,7 +194,7 @@ public class Runtime implements RuntimeConstants
      * Initialize the Velocity Runtime with a Properties
      * object.
      *
-     * @param p The properties used for initializiation.
+     * @param p The properties used for initialization.
      * @throws Exception When a problem occurs during init.
      */
     public static void init(Properties p) throws Exception

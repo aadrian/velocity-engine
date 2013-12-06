@@ -123,7 +123,7 @@
     <dt><a name="identifier">Identifier</a></dt>
     <dd>The name of a <a href="#variable">variable</a>. Identifiers must
     start with an alphabetic character (a .. z, A .. Z). The rest of the
-    characters are limited to alphabetic, numberic (0 .. 9), hyphens ("-"),
+    characters are limited to alphabetic, numeric (0 .. 9), hyphens ("-"),
     and underscores ("_").</dd>
 
     <dt><a name="if">#if</a></dt>
@@ -155,7 +155,7 @@
     <dd>A type of <a href="#reference">reference</a>. Methods are
     defined in the Java code and are capable of doing something useful.
     The shorthand notation consists of a leading <code>$</code> character
-    followed by an <a href="#identifier">identifier</a>, folowed by a
+    followed by an <a href="#identifier">identifier</a>, followed by a
     <a href="#vtlmethodbody">VTL Method Body</a>.</dd>
 
     <dt><a name="mvc">MVC</a></dt>

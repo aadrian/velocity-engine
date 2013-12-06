@@ -202,7 +202,6 @@ public interface RuntimeServices extends RuntimeLogger
      * @throws ParseErrorException The template could not be parsed.
      * @throws MethodInvocationException A method on a context object could not be invoked.
      * @throws ResourceNotFoundException A referenced resource could not be loaded.
-     * @throws IOException While rendering to the writer, an I/O problem occured.
      * @since Velocity 1.6
      */
     public boolean evaluate(Context context, Writer out,

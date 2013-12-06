@@ -141,7 +141,7 @@ public class ClassMap
         return methodCache;
     }
 
-    /* recurses up interface heirarchy to get all super interfaces (VELOCITY-689) */
+    /* recurses up interface hierarchy to get all super interfaces (VELOCITY-689) */
     private void populateMethodCacheWithInterface(MethodCache methodCache, Class iface)
     {
         if (Modifier.isPublic(iface.getModifiers()))

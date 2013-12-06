@@ -91,7 +91,6 @@ public class Template extends Resource
      *          from any available source.
      * @throws ParseErrorException if template cannot be parsed due
      *          to syntax (or other) error.
-     * @throws IOException problem reading input stream
      */
     public boolean process()
         throws ResourceNotFoundException, ParseErrorException
@@ -168,7 +167,7 @@ public class Template extends Resource
             finally
             {
                 /*
-                 *  Make sure to close the inputstream when we are done.
+                 *  Make sure to close the input stream when we are done.
                  */
                 try
                 {
@@ -198,7 +197,7 @@ public class Template extends Resource
     /**
      *  initializes the document.  init() is not longer
      *  dependant upon context, but we need to let the
-     *  init() carry the template name down throught for VM
+     *  init() carry the template name down through for VM
      *  namespace features
      * @throws TemplateInitException When a problem occurs during the document initialization.
      */
@@ -246,7 +245,7 @@ public class Template extends Resource
      * The AST node structure is merged with the
      * context to produce the final output.
      *
-     *  @param context Conext with data elements accessed by template
+     *  @param context Context with data elements accessed by template
      *  @param writer output writer for rendered template
      *  @throws ResourceNotFoundException if template not found
      *          from any available source.
@@ -265,7 +264,7 @@ public class Template extends Resource
      * The AST node structure is merged with the
      * context to produce the final output.
      *
-     *  @param context Conext with data elements accessed by template
+     *  @param context Context with data elements accessed by template
      *  @param writer output writer for rendered template
      *  @param macroLibraries a list of template files containing macros to be used when merging
      *  @throws ResourceNotFoundException if template not found

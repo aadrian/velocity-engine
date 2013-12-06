@@ -32,7 +32,7 @@ options
     /**
      * Each node will have access to the parser, I did this so
      * some global information can be shared via the parser. I
-     * think this will come in handly keeping track of
+     * think this will come in handy keeping track of
      * context, and being able to push changes back into
      * the context when nodes make modifications to the
      * context by setting properties, variables and
@@ -261,11 +261,11 @@ public class Parser
         }
 
         /*
-         *  If this is a predefined derective or if we detect
-         *  a macro definition (this is aproximate at best) then
+         *  If this is a predefined directive or if we detect
+         *  a macro definition (this is approximate at best) then
          *  we absorb the forward slash.  If in strict reference
-         *  mode then we always absord the forward slash regardless
-         *  if the derective is defined or not.
+         *  mode then we always absorb the forward slash regardless
+         *  if the directive is defined or not.
          */
 
         if (strictEscape 
@@ -1968,9 +1968,9 @@ void PrimaryExpression() #void : {}
 
     A VTL element is either :
 
-        1) It preceeds a reference that is in the context.
+        1) It precedes a reference that is in the context.
 
-        2) It preceeds a defined directive (#set, #if, #end, etc) or a valid
+        2) It precedes a defined directive (#set, #if, #end, etc) or a valid
         pluggable directive, such as #foreach
 
     In all other cases the '\' is just another piece of text.  The purpose of this
@@ -1998,8 +1998,8 @@ void PrimaryExpression() #void : {}
     The recent versions of the parser are trying to support precise output to
     support general template use. The directives do not render trailing
     whitespace and newlines if followed by a newline.  They will render
-    preceeding whitespace. The only exception is #set, which also eats
-    preceeding whitespace.
+    preceding whitespace. The only exception is #set, which also eats
+    preceding whitespace.
 
     So, with a template :
 

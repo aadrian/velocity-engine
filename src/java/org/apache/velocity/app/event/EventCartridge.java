@@ -69,7 +69,7 @@ public class EventCartridge
      *  will find all possible event handler interfaces supported
      *  by the passed in object.
      *
-     *  @param ev object impementing a valid EventHandler-derived interface
+     *  @param ev object implementing a valid EventHandler-derived interface
      *  @return true if a supported interface, false otherwise or if null
      */
     public boolean addEventHandler( EventHandler ev )
@@ -175,7 +175,7 @@ public class EventCartridge
      * possible event handler interfaces supported by the passed in object and
      * remove them.
      *
-     * @param ev  object impementing a valid EventHandler-derived interface
+     * @param ev  object implementing a valid EventHandler-derived interface
      * @return true if event handler was previously registered, false if not
      *         found
      */

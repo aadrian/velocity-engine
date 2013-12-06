@@ -122,7 +122,7 @@ public class Log4JLogChute implements LogChute
             appender.setMaxBackupIndex(1);
             appender.setMaximumFileSize(100000);
 
-            // don't inherit appenders from higher in the logger heirarchy
+            // don't inherit appenders from higher in the logger hierarchy
             logger.setAdditivity(false);
             logger.addAppender(appender);
             log(DEBUG_ID, "Log4JLogChute initialized using file '"+file+'\'');

@@ -153,7 +153,7 @@ public class Foreach extends Directive
     /**
      * The name of the variable to use when placing
      * iterator hasNext() value into the context.Right
-     * now the defailt is $velocityHasNext
+     * now the default is $velocityHasNext
      */
     private String hasNextName;
 
@@ -252,7 +252,7 @@ public class Foreach extends Directive
         
         if (rsvc.getBoolean(RuntimeConstants.RUNTIME_REFERENCES_STRICT, false))
         {
-          // If we are in strict mode then the default for skipInvalidItarator
+          // If we are in strict mode then the default for skipInvalidIterator
           // is true.  However, if the property is explicitly set, then honor the setting.
           skipInvalidIterator = rsvc.getBoolean(RuntimeConstants.SKIP_INVALID_ITERATOR, false);
         }

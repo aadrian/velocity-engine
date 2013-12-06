@@ -36,7 +36,7 @@
     <pathelement location="${basedir}" />
   </path>
   <!-- This is the relative base dir. This must be the root of the   -->
-  <!-- Velocity distribution. All relative pathes are prefixed with  -->
+  <!-- Velocity distribution. All relative patches are prefixed with  -->
   <!-- velocity.dir                                                  -->
   <pathconvert property="velocity.dir" refid="basedir-os" targetos="unix"/>
 
@@ -372,14 +372,14 @@
     <javacc target="${parserjj.file}"
             outputdirectory="${build.parser}"
             javacchome="${javacc.home}" />
-    <replace file="${src.java.dir}/org/apache/velocity/runtime/parser/ParserTokenManager.java" 
-             token="StringBuffer" 
-             value="StrBuilder"/>        
+    <replace file="${src.java.dir}/org/apache/velocity/runtime/parser/ParserTokenManager.java"
+             token="StringBuffer"
+             value="StrBuilder"/>
   </target>
 
-   <target name="javacc-cleanup" depends="parser-check">   
+   <target name="javacc-cleanup" depends="parser-check">
        <delete>
-           <fileset dir="${src.java.dir}/org/apache/velocity/runtime/parser/">  
+           <fileset dir="${src.java.dir}/org/apache/velocity/runtime/parser/">
                <include name="Node.java"/>
                <include name="ParserVisitor.java"/>
            </fileset>
@@ -688,7 +688,7 @@
   <!-- =================================================================== -->
   <!-- Install Maven artifacts                                             -->
   <!-- =================================================================== -->
-  <target name="maven-install" depends="maven-prepare,release" 
+  <target name="maven-install" depends="maven-prepare,release"
     description="Installs the Maven artifacts in local repository">
 
     <artifact:install file="${build.dir}/${project}-${version}.jar" >
@@ -951,9 +951,9 @@
       Some instructions for that are at the top of that file.
 
     * Call "ant publish"
-    
+
     * Review http://wiki.apache.org/velocity/ReleaseProcess for more details.
-    </echo>        
+    </echo>
   </target>
 
   <!-- ================================================================== -->
@@ -976,7 +976,7 @@
       <condition property="correct-java-version">
         <equals arg1="${ant.java.version}" arg2="${dist.required.java.version}"/>
       </condition>
-  
+
       <fail unless="correct-java-version">
         Could not run create distribution package:
     ***********************************************************
@@ -991,14 +991,14 @@
       <echo>
     ***********************************************************
     **
-    ** Creating a distribution package.  Compiling with 
+    ** Creating a distribution package.  Compiling with
     ** Java version ${java.version}
     **
     ***********************************************************
       </echo>
 
   </target>
-  
+
   <!-- ======================================================================= -->
   <!-- Cleans up the build directory. Leave Libs unharmed to avoid re-download -->
   <!-- ======================================================================= -->
@@ -1128,7 +1128,7 @@
     </condition>
   </target>
 
-  <target name="prepare.publish" 
+  <target name="prepare.publish"
           depends="publish.sigs,publish.auth">
     <condition property="ready">
       <and>
@@ -1180,14 +1180,14 @@
           end
 
     * Announce the availability of an Engine ${version} test build on dev@velocity.apache.org.
-    
+
     * Allow a few days for people to test the test build.
 
     * Call for a release vote on private@velocity.apache.org and dev@velocity.apache.org
 
     * Once the release vote has passed, these files should all be copied to
         /www/www.apache.org/dist/velocity/engine/${version}
-      and the non-dep jar, source jar, javadoc jar, pom and respective md5, sha1 and asc files should be copied into 
+      and the non-dep jar, source jar, javadoc jar, pom and respective md5, sha1 and asc files should be copied into
         /www/people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/velocity/velocity/${version}/
 
     * Remove older releases of the same grade as this one (alpha, beta, final) from
@@ -1217,7 +1217,7 @@
 
     * Send an announcement email from your apache.org address to all Velocity lists
       and also to announce@apache.org.
-    
+
     * Review http://wiki.apache.org/velocity/ReleaseProcess for more details.
     </echo>
   </target>
@@ -1289,9 +1289,9 @@
       </batchtest>
     </junit>
   </target>
-  
+
   <target name="test" depends="test-main, test-legacy"/>
-  
+
   <target name="test-legacy" unless="testcase">
     <!-- Run the legacy tests for anakia, texen... -->
     <ant antfile="${velocity.build.dir}/testcases.xml"

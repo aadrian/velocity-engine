@@ -58,7 +58,7 @@ public class VelocimacroManager
     /** reference to global namespace hash */
     private final Map globalNamespace;
 
-    /** set of names of library tempates/namespaces */
+    /** set of names of library templates/namespaces */
     private final Set libraries = Collections.synchronizedSet(new HashSet());
     
     private RuntimeServices rsvc = null;
@@ -113,7 +113,7 @@ public class VelocimacroManager
          *  the client (VMFactory) will signal to us via
          *  registerFromLib that we are in startup mode registering
          *  new VMs from libraries.  Therefore, we want to
-         *  addto the library map for subsequent auto reloads
+         *  add to the library map for subsequent auto reloads
          */
 
         boolean isLib = true;
@@ -351,7 +351,7 @@ public class VelocimacroManager
            */
           namespaceHash.put(namespace, oh);
           /*
-           * Should't we be returning the old entry (oh)?
+           * Shouldn't we be returning the old entry (oh)?
            * The previous code was just returning null in this case.
            */
           return null;

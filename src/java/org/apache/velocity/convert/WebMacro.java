@@ -48,7 +48,7 @@ public class WebMacro
     protected static final String WM_EXT = ".wm";
 
     /**
-     * The regexes to use for line by line substition. The regexes
+     * The regexes to use for line by line substitution. The regexes
      * come in pairs. The first is the string to match, the second is
      * the substitution to make.
      */

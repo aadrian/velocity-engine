@@ -38,7 +38,7 @@ for JSP.  Some of the benefits of using Velocity to generate web pages are:
 <li> <strong>Simplicity</strong> - The pages can be written and maintained by non-technical web designers.
 </li>
 
-<li> <strong>Ease of maintainance</strong> - Scripting is removed from web pages with the recommended MVC approach.
+<li> <strong>Ease of maintenance</strong> - Scripting is removed from web pages with the recommended MVC approach.
 </li>
 
 <li> <strong>Access both methods and properties</strong> - Web designers can reference methods as well as properties of objects in a context.

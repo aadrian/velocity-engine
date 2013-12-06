@@ -123,10 +123,10 @@ public class RuntimeInstance implements RuntimeConstants, RuntimeServices
     private  VelocimacroFactory vmFactory = null;
 
     /**
-     * The Runtime logger.  We start with an instance of
+     * The Runtime logger. We start with an instance of
      * a 'primordial logger', which just collects log messages
      * then, when the log system is initialized, all the
-     * messages get dumpted out of the primordial one into the real one.
+     * messages get dumped out of the primordial one into the real one.
      */
     private Log log = new Log();
 
@@ -269,7 +269,7 @@ public class RuntimeInstance implements RuntimeConstants, RuntimeServices
             initializeEvaluateScopeSettings();
             /*
              *  initialize the VM Factory.  It will use the properties
-             * accessable from Runtime, so keep this here at the end.
+             * accessible from Runtime, so keep this here at the end.
              */
             vmFactory.initVelocimacro();
 
@@ -1550,7 +1550,7 @@ public class RuntimeInstance implements RuntimeConstants, RuntimeServices
         throws ResourceNotFoundException, ParseErrorException
     {
         /*
-         *  the encoding is irrelvant as we don't do any converstion
+         *  the encoding is irrelvant as we don't do any conversation
          *  the bytestream should be dumped to the output stream
          */
 

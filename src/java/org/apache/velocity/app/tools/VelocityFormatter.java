@@ -325,7 +325,7 @@ public class VelocityFormatter
 
         /**
          * Returns the current alternate, and automatically alternates
-         * to the next alternate in its sequence (trigged upon
+         * to the next alternate in its sequence (triggered upon
          * rendering).
          *
          * @return The current alternate in the sequence.

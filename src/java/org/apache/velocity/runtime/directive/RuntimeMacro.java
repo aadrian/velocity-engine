@@ -127,7 +127,7 @@ public class RuntimeMacro extends Directive
 
 
     /**
-     * Intialize the Runtime macro. At the init time no implementation so we
+     * Initialize the Runtime macro. At the init time no implementation so we
      * just save the values to use at the render time.
      *
      * @param rs runtime services
@@ -206,10 +206,10 @@ public class RuntimeMacro extends Directive
 
     /**
      * Velocimacro implementation is not known at the init time. So look for
-     * a implementation in the macro libaries and if finds one renders it. The
+     * a implementation in the macro libraries and if finds one renders it. The
      * actual rendering is delegated to the VelocimacroProxy object. When
      * looking for a macro we first loot at the template with has the
-     * macro call then we look at the macro lbraries in the order they appear
+     * macro call then we look at the macro libraries in the order they appear
      * in the list. If a macro has many definitions above look up will
      * determine the precedence.
      *

@@ -210,7 +210,7 @@ public class StringUtils
      * Create a string array from a string separated by delim
      *
      * @param line the line to split
-     * @param delim the delimter to split by
+     * @param delim the delimiter to split by
      * @return a string array of the split fields
      */
     public static String [] split(String line, String delim)
@@ -292,7 +292,7 @@ public class StringUtils
     }
 
     /**
-     * Perform a series of substitutions. The substitions
+     * Perform a series of substitutions. The substitutions
      * are performed by replacing $variable in the target
      * string with the value of provided by the key "variable"
      * in the provided hashtable.

@@ -43,7 +43,7 @@ Building from source requires Java version 1.4 (or greater) and ant
 INCLUDED PRE-BUILT JARS
 -----------------------
 
-If you are using an offical Apache Velocity release distribution, you
+If you are using an official Apache Velocity release distribution, you
 will find two pre-built jars in the top level directory.
 
 1) velocity-<version>.jar: 
@@ -155,7 +155,7 @@ export MAVEN_OPTS=-Xmx384M
 TRYING THE EXAMPLES
 -------------------
 
-After building Velocity, you can also buld the examples that are
+After building Velocity, you can also build the examples that are
 included with the Velocity distribution.  These examples show how to
 use Velocity in your Java applications.  There also are examples of
 how to use Anakia, a XML transformation engine.

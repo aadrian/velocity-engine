@@ -46,15 +46,15 @@ velocity-dep-<version>.jar
   oro           org.apache.oro.* packages,
                 from http://jakarta.apache.org/oro/
 
-  commons-lang  org.apache.commons.lang.* packages,
-                from http://jakarta.apache.org/commons/lang/
+  commons-lang  org.apache.commons.lang3.* packages,
+                from http://commons.apache.org/lang/
 
   Avalon Logkit org.apache.log.* packages
 
   and a subset of
 
   commons-collections org.apache.commons.collections.* packages
-                      from http://jakarta.apache.org/commons/collections/
+                      from http://commons.apache.org/collections/
 
   These classes are strictly intended for Velocity use! If you want to use
   the velocity-dep jar, do not rely on any of the other classes being present.

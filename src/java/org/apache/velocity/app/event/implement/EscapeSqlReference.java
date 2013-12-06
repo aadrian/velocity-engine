@@ -19,11 +19,10 @@ package org.apache.velocity.app.event.implement;
  * under the License.    
  */
 
-import org.apache.commons.lang.StringEscapeUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Escapes the characters in a String to be suitable to pass to an SQL query.
- * @see <a href="http://jakarta.apache.org/commons/lang/api/org/apache/commons/lang/StringEscapeUtils.html#escapeSql(java.lang.String)">StringEscapeUtils</a>
  * @author wglass
  * @since 1.5
  */
@@ -32,14 +31,17 @@ public class EscapeSqlReference extends EscapeReference
 
     /**
      * Escapes the characters in a String to be suitable to pass to an SQL query.
-     * 
+     *
      * @param text
      * @return An escaped string.
-     * @see <a href="http://jakarta.apache.org/commons/lang/api/org/apache/commons/lang/StringEscapeUtils.html#escapeSql(java.lang.String)">StringEscapeUtils</a>
      */
     protected String escape(Object text)
     {
-        return StringEscapeUtils.escapeSql(text.toString());
+        String str = text.toString();
+        if (str == null) {
+            return null;
+        }
+        return StringUtils.replace(str, "'", "''");
     }
 
     /**

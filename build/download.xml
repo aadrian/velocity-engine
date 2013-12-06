@@ -113,9 +113,9 @@
   </target>
 
   <target name="commons-lang-download">
-   <property name="download.groupId" value="${jar.commons-lang.name}" />
-   <property name="download.artifactId" value="${jar.commons-lang.name}" />
-   <property name="download.version" value="${jar.commons-lang.version}" />
+   <property name="download.groupId" value="org/apache/commons" />
+   <property name="download.artifactId" value="${jar.commons-lang3.name}" />
+   <property name="download.version" value="${jar.commons-lang3.version}" />
    <antcall target="http-m2-download"/>
   </target>
 

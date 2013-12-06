@@ -415,7 +415,7 @@
     </unzip>
 
     <unzip src="${jar.oro.dir}/${jar.oro.name}-${jar.oro.version}.jar"  dest="${build.deps}"/>
-    <unzip src="${jar.commons-lang.dir}/${jar.commons-lang.name}-${jar.commons-lang.version}.jar" dest="${build.deps}"/>
+    <unzip src="${jar.commons-lang3.dir}/${jar.commons-lang3.name}-${jar.commons-lang3.version}.jar" dest="${build.deps}"/>
     <delete dir="${build.deps}/META-INF" quiet="true"/>
   </target>
 
@@ -629,7 +629,7 @@
       <link href="http://excalibur.apache.org/apidocs"/>
       <link href="http://tomcat.apache.org/tomcat-4.1-doc/servletapi"/>
       <link href="http://jakarta.apache.org/oro/api"/>
-      <link href="http://jakarta.apache.org/commons/lang/api-release"/>
+      <link href="http://commons.apache.org/proper/commons-lang/javadocs/api-release/"/>
       <link href="http://jakarta.apache.org/commons/collections/api-release"/>
     </javadoc>
 
